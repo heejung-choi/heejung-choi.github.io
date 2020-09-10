@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a3ea3fad48.js" crossorigin="anonymous"></script>
+    <style>
+      .navsize {
+  height: 100px;
+  font-size: 1.2em;
+}
+
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+  padding-top: 75px;
+}
+
+.main {
+  height: 750px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainleft {
+  width: 40%;
+  
+}
+
+.mainright {
+  width: 60%;
+  
+}
+
+.maincard{
+  width: 80%;
+  height: 600px;
+  position: absolute;
+  z-index: 100;
+  margin-top: 8%;
+  margin-bottom: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+  top: -8%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardleft {
+  width: 40%;
+}
+
+.cardright {
+  width: 55%;
+  margin-left: 5%;
+}
+
+.border-0 {
+  width: 100%;
+  height: 100%;
+  text-align: center;        
+}
+
+.boldword{       
+  font-weight: bold; 
+  font-size: 1.5em;       
+}
+.cardword{                
+  font-size: 1.2em;       
+}
+  
+  hr{
+  border-top: 3px solid rgba(0,0,0,.1);
+  }
+  a{
+    color:black
+  }
+.shadows {
+  text-shadow: 2px 1px slategray;
+  font-weight: bold;
+}
+.ulfont{
+  font-size: 0.95em;
+}
+
+#chartdiv {
+width: 100%;
+height: 400px;
+font-weight:bold;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+.skillbottom{
+    
+  padding-bottom: 70px;
+}
+
+.skiltop{
+   height: 100px;
+}
+
+.skillcard{
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  width: 70%;
+}
+
+.skillfont{
+  font-size: 2.5em;
+
+}
+
+.cardhead{
+  color: black;
+  font-weight: bold;
+  font-size: 1.4em;
+
+}
+
+.skillimg{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.skillgroup{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.majorimg{
+  width: 70px;
+  height: 70px;
+  margin: 7px;
+
+}
+
+.projectcard{
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  width: 70%;
+  padding-
+}
+
+.procardimg{
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 4px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: rgb(28, 46, 72);
+  color: white;
+  
+}
+
+.button2:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid rgb(28, 46, 72);
+}
+tr {
+  line-height: 25px;
+  min-height: 25px;
+  height: 25px;
+}
+
+footer{
+  background-color: white;
+
+}
+
+
+    </style>
+</head>
+<body>
+<!--20200630 header 부분 시작-->
+<nav class="navbar navbar-expand-md bg-white navbar-white navsize fixed-top">
+  <a class="text-dark" href="#"><span style="font-size: 1.5em; font-weight: bold;">
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+    heejung /</span> 데이터분석, 백앤드</a>
+   
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto topnav">
+        <li class="nav-item">
+          <a class="text-dark" href="#about">ABOUT ME &nbsp;</a>&nbsp;&nbsp;&nbsp;
+        </li>
+         <li class="nav-item">
+          <a class="text-dark" href="#skill">SKILL &nbsp;</a>&nbsp;&nbsp;&nbsp;
+        </li>
+        <li class="nav-item">
+          <a class="text-dark" href="#project">PROJECT &nbsp;</a>&nbsp;&nbsp;&nbsp;
+        </li>
+        <li class="nav-item">
+          <a class="text-dark" href="#edu">EXPERIENCE & EDUCATION &nbsp;</a>&nbsp;&nbsp;&nbsp;
+        </li>           
+      </ul>
+    </div>  
+  </nav>          
+</div>
+<!--20200630 header 부분 끝-->
+
+<!--20200630 about부분 시작-->
+<div class="main" id="about">
+<div class="mainleft" style="background-color: #e6dace;"></div>
+<div class="mainright"></div>
+</div>
+<div class="maincard">
+<div class="cardleft" style="padding-top: 75px;">
+  <div class="border-0 shadow p-3 mb-5" style="background-color: rgb(244,236,230);">
+      <br>            
+      <img class="rounded-circle" src="https://user-images.githubusercontent.com/58652391/92667124-07a90880-f346-11ea-98f4-a0dafaad633e.jpg" width="152px" height="200px">
+      <br><br>       
+      <p class="boldword">heejung <img src="https://user-images.githubusercontent.com/58652391/92667424-da108f00-f346-11ea-8f4b-01892da2adbb.png" onclick="location.href='https://github.com/heejung-choi'" width="40px" height="40px">
+             
+      <br></p>
+      <hr width="50px" size="10" align="center" color="blue">
+      <br>
+      <p class="cardword">{{content.job}}<br>
+        choi951008@naver.com
+      </p>
+      <br>
+      <p class="cardword font-weight-bold" style="color:blue">
+      <span style="color:black">소개 :</span><br>
+      {{content.introduce}}
+      </p>
+
+                 
+              
+  </div>
+</div>
+<!--20200630 희정 myDevelope Life 시각화 부분 js 시작-->
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/plugins/timeline.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+<!--20200630 희정 myDevelope Life 시각화 부분 js 끝-->
+
+<!--20200630 희정 myDevelope Life 시각화 부분 시작-->
+<script>
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+var chart = am4core.create("chartdiv", am4plugins_timeline.CurveChart);
+chart.curveContainer.padding(0, 100, 0, 120);
+chart.maskBullets = false;
+
+var colorSet = new am4core.ColorSet();
+
+chart.data = [{
+    "category": "",
+    "year": "1",
+    "size": 3,
+    "text": "{{content.develop_content1}}"
+  }, {
+    "category": "",
+    "year": "2",
+    "size": 3,
+    "text": "{{content.develop_content2}}"
+  }, {
+    "category": "",
+    "year": "3",
+    "size": 3,
+    "text": "{{content.develop_content3}}"
+  }, {
+    "category": "",
+    "year": "4",
+    "size": 3,
+    "text": "{{content.develop_content4}}"
+  }, {
+    "category": "",
+    "year": "5",
+    "size": 3,
+    "text": "{{content.develop_content5}}"
+  }, {
+    "category": "",
+    "year": "6",
+    "size": 3,
+    "text": "{{content.develop_content6}}"
+  }
+];
+
+chart.dateFormatter.inputDateFormat = "yyyy";
+
+chart.fontSize = 10;
+chart.tooltipContainer.fontSize = 1;
+
+var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
+categoryAxis.dataFields.category = "category";
+categoryAxis.renderer.grid.template.disabled = true;
+
+var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+dateAxis.renderer.points = [{ x: -400, y: 0 }, { x: 0, y: 50 }, { x: 400, y: 0 }]
+dateAxis.renderer.polyspline.tensionX = 0.8;
+dateAxis.renderer.grid.template.disabled = true;
+dateAxis.renderer.line.strokeDasharray = "1,4";
+dateAxis.baseInterval = {period:"day", count:1}; // otherwise initial animation will be not smooth
+
+dateAxis.renderer.labels.template.disabled = true;
+
+var series = chart.series.push(new am4plugins_timeline.CurveLineSeries());
+series.strokeOpacity = 0;
+series.dataFields.dateX = "year";
+series.dataFields.categoryY = "category";
+series.dataFields.value = "size";
+series.baseAxis = categoryAxis;
+
+var interfaceColors = new am4core.InterfaceColorSet();
+
+series.tooltip.pointerOrientation = "down";
+
+var distance = 100;
+var angle = 55;
+
+var bullet = series.bullets.push(new am4charts.Bullet());
+
+var line = bullet.createChild(am4core.Line);
+line.adapter.add("stroke", function(fill, target) {
+  if (target.dataItem) {
+    return chart.colors.getIndex(target.dataItem.index)
+  }
+});
+
+line.x1 = 0;
+line.y1 = 0;
+line.y2 = 0;
+line.x2 = distance - 10;
+line.strokeDasharray = "1,3";
+
+var circle = bullet.createChild(am4core.Circle);
+circle.radius = 30;
+circle.fillOpacity = 1;
+circle.strokeOpacity = 0;
+
+var circleHoverState = circle.states.create("hover");
+circleHoverState.properties.scale = 1.3;
+
+series.heatRules.push({ target: circle, min: 20, max: 50, property: "radius" });
+circle.adapter.add("fill", function(fill, target) {
+  if (target.dataItem) {
+    return chart.colors.getIndex(target.dataItem.index)
+  }
+});
+circle.tooltipText = "{text}: {value}";
+circle.adapter.add("tooltipY", function(tooltipY, target){
+  return -target.pixelRadius - 4;
+});
+
+var yearLabel = bullet.createChild(am4core.Label);
+yearLabel.text = "{year}";
+yearLabel.strokeOpacity = 0;
+yearLabel.fill = am4core.color("#fff");
+yearLabel.horizontalCenter = "middle";
+yearLabel.verticalCenter = "middle";
+yearLabel.interactionsEnabled = false;
+
+var label = bullet.createChild(am4core.Label);
+label.propertyFields.text = "text";
+label.strokeOpacity = 0;
+label.horizontalCenter = "right";
+label.verticalCenter = "middle";
+
+label.adapter.add("opacity", function(opacity, target) {
+  if(target.dataItem){
+    var index = target.dataItem.index;
+    var line = target.parent.children.getIndex(0);
+
+    if (index % 2 == 0) {
+      target.y = -distance * am4core.math.sin(-angle);
+      target.x = -distance * am4core.math.cos(-angle);
+      line.rotation = -angle - 180;
+      target.rotation = -angle;
+    }
+    else {
+      target.y = -distance * am4core.math.sin(angle);
+      target.x = -distance * am4core.math.cos(angle);
+      line.rotation = angle - 180;
+      target.rotation = angle;
+    }
+  }
+  return 1;
+});
+
+var outerCircle = bullet.createChild(am4core.Circle);
+outerCircle.radius = 30;
+outerCircle.fillOpacity = 0;
+outerCircle.strokeOpacity = 0;
+outerCircle.strokeDasharray = "1,3";
+
+var hoverState = outerCircle.states.create("hover");
+hoverState.properties.strokeOpacity = 0.8;
+hoverState.properties.scale = 1.5;
+
+outerCircle.events.on("over", function(event){
+  var circle = event.target.parent.children.getIndex(1);
+  circle.isHover = true;
+  event.target.stroke = circle.fill;
+  event.target.radius = circle.pixelRadius;
+  event.target.animate({property: "rotation", from: 0, to: 360}, 4000, am4core.ease.sinInOut);
+});
+
+outerCircle.events.on("out", function(event){
+  var circle = event.target.parent.children.getIndex(1);
+  circle.isHover = false;
+});
+
+chart.scrollbarX = new am4core.Scrollbar();
+chart.scrollbarX.opacity = 0.5;
+chart.scrollbarX.width = am4core.percent(50);
+chart.scrollbarX.align = "center";
+
+}); // end am4core.ready()
+<!--20200630 희정 myDevelope Life 시각화 부분 끝-->
+
+</script>
+<div class="cardright" style="padding-top: 75px;">
+<h5 class="font-weight-bold">My develope Life</h5>
+  <div id="chartdiv">
+  </div>
+  <br>
+  <h5 class="font-weight-bold">My major skills</h5>
+  <br>           
+    <img class="majorimg" src="https://img.stackshare.io/service/1209/javascript.jpeg">
+    <img class="majorimg" src="https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg">
+    <img class="majorimg" src="https://img.stackshare.io/service/1231/0TXzZU7W_400x400.jpg">
+    <img class="majorimg" src="https://img.stackshare.io/service/993/pUBY5pVj.png">
+    <img class="majorimg" src="https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png">
+    
+    
+</div>    
+</div>
+
+<!--20200630 about부분 끝-->
+
+<!--20200630 edu부분 시작-->
+<div class="skill" id="skill" style="background-color: #e6dace;" >
+<div class="skiltop"></div>
+
+<div class="text-center"><h1 class="font-weight-bold skillfont" style="color:black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+Skill</h1></div><br>
+
+<!--20200630 card부분 시작-->
+<div class="skillcard shadow">
+    <div class="card text-center d-flex justify-content-center">
+      <div class="card-header cardhead" style="background-color: (244,236,230);">      
+      Application & Data
+      </div>
+        <div class="card-body">
+          <div class="card-text text-centenr skillgroup">          
+            <img class="skillimg" src="https://img.stackshare.io/service/1231/0TXzZU7W_400x400.jpg">
+            <img class="skillimg" src="https://img.stackshare.io/service/1209/javascript.jpeg">
+            <img class="skillimg" src="https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg">
+            <img class="skillimg" src="https://img.stackshare.io/service/993/pUBY5pVj.png">
+            <img class="skillimg" src="https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png">
+            <img class="skillimg" src="https://img.stackshare.io/service/991/hwUcGZ41_400x400.jpg">
+            <img class="skillimg" src="https://img.stackshare.io/service/1020/OYIaJ1KK.png">
+            <img class="skillimg" src="https://img.stackshare.io/service/1052/YMxUfyWf.png">
+          </div>
+        </div>
+    </div>
+  </div>  
+<!--20200630 card 부분 끝-->
+
+<br><br><br>
+
+<!--20200630 card부분 시작-->
+<div class="skillcard shadow">
+    <div class="card text-center d-flex justify-content-center">
+      <div class="card-header cardhead" style="background-color: rgb(244,236,230);">      
+      Utilities
+      </div>
+        <div class="card-body">
+          <div class="card-text text-centenr skillgroup">          
+            <img class="skillimg" src="https://img.stackshare.io/service/1336/xWMRvm_5_400x400.png">
+            <img class="skillimg" src="https://img.stackshare.io/service/1927/so-icon.png">
+            <img class="skillimg" src="https://img.stackshare.io/service/1652/googlemaps.png">
+            <img class="skillimg" src="https://img.stackshare.io/service/841/Image_2019-05-20_at_4.58.04_PM.png">
+          </div>
+        </div>
+    </div>
+  </div>  
+<!--20200630 card 부분 끝-->
+
+<br><br><br>
+
+<!--20200630 card부분 시작-->
+<div class="skillcard shadow">
+    <div class="card text-center d-flex justify-content-center">
+      <div class="card-header cardhead" style="background-color: rgb(244,236,230);">      
+      DevOps
+      </div>
+        <div class="card-body">
+          <div class="card-text text-centenr skillgroup">              
+            <img class="skillimg" src="https://img.stackshare.io/service/11275/devopsdata.png">
+            <img class="skillimg" src="https://img.stackshare.io/service/4313/XNKktHjN_400x400.png">
+            <img class="skillimg" src="https://img.stackshare.io/service/4414/BpqlqOrE_400x400.jpg">
+            <img class="skillimg" src="https://img.stackshare.io/service/12194/toadDev.png">
+            <img class="skillimg" src="https://img.stackshare.io/service/27/sBsvBbjY.png">
+            <img class="skillimg" src="https://img.stackshare.io/service/1517/sbUizSli_400x400.jpg">
+          </div>
+        </div>
+    </div>
+  </div>  
+<!--20200630 card 부분 끝-->
+
+<br><br><br>
+
+<!--20200630 card부분 시작-->
+<div class="skillcard shadow">
+    <div class="card text-center d-flex justify-content-center">
+      <div class="card-header cardhead" style="background-color: rgb(244,236,230);">      
+      Business Tools
+      </div>
+        <div class="card-body">
+          <div class="card-text text-centenr skillgroup">              
+            <img class="skillimg" src="https://img.stackshare.io/service/675/RNiSRYOF_400x400.jpg">
+            <img class="skillimg" src="https://img.stackshare.io/service/3167/_K34MGL8_400x400.jpg">
+            <img class="skillimg" src="https://img.stackshare.io/service/154/Qifq4jpS_400x400.jpg">
+            <img class="skillimg" src="https://img.stackshare.io/service/3176/lxVcZyci.jpg">
+            <img class="skillimg" src="https://img.stackshare.io/service/5989/teams.png">
+            <img class="skillimg" src="https://img.stackshare.io/service/4167/KkVyIqPN_400x400.jpg">
+            <img class="skillimg" src="https://img.stackshare.io/service/2942/tisWILkq_400x400.png">
+          </div>
+        </div>
+    </div>
+  </div>  
+<!--20200630 card 부분 끝-->
+<br><br>
+</div>
+</div>
+<!--20200630 edu부분 끝-->
+
+<!--20200701 프로젝트부분 시작-->
+
+<div class="skill" id="skill" style="background-color: #e6dace; padding-bottom: 70px;">
+<div class="skiltop"></div>
+<div class="text-center"><h1 class="font-weight-bold skillfont" style="color:black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+Projects</h1></div>
+
+<!--프로젝트 edu카드부분 시작-->
+<!--프로젝트 카드부분 시작-->
+<br><br>
+<div class="projectcard shadow" id="project">
+<div class="card mb-3 d-flex justify-content-center">
+<div class="row no-gutters"> 
+  <div class="col-md-7">
+    <div class="projecttext"><br>
+      <table class="table table-borderless" style="font-size: 0.8rem;">  
+      <!--table table-borderless -->
+        <tbody>
+          <tr>
+            <th scope="row" class="pt-0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+            </th>
+            <td class="align-middle pt-0">프로젝트명</td>
+            <td class="align-middle pt-0" colspan="5">58세대를 위한 건강정보시스템 & 건강마켓</td>              
+          </tr>
+          <tr>
+            <th scope="row" class="pt-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+            </th>
+            <td class="align-middle pt-0">개발기간</td>
+            <td class="align-middle pt-0" colspan="5">2020.06.09-2020.06.27</td>              
+          </tr>
+          <tr>
+            <th scope="row" class="pt-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+            </th>        
+            <td class="align-middle pt-0">팀내역할</td>
+            <td class="align-middle pt-0" colspan="5">데이터분석 & 백앤드</td>  
+          </tr>
+          <tr>
+            <th scope="row" class="pt-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+            </th>        
+            <td class="align-middle pt-0" >개발스텍</td>
+            <td class="align-middle pt-0" colspan="5">Spring Java R HTML</td>  
+          </tr>
+          <tr>
+            <th scope="row" class="pt-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+            </th>        
+            <td class="align-middle pt-0">프로젝트 설명</td>              
+          </tr>            
+          <tr>              
+            <td class="align-middle text-center pt-0 pb-0" colspan="6">
+            <div class="text-left pt-0">              
+            <p>58세대가 이용하기 편리한 건강정보 시스템 & 마켓을 구현하였다. 질병을 선택하면 질병별로 교차분석해 개개인의 건강에 맞춘 농산물들을 추천해주고 마켓을 통해 농가와 소비자가 다이렉트로 구매할 수 있게 되면서 국내 농가 수익 창출을 통해 농촌 경제를 활성화할 수 있다.</p>
+            </div>
+            <button class="button button2" onclick="window.open('https://github.com/heejung-choi/SpringMVC-R-opalproject','window_name','width=800,height=800,location=no,status=no,scrollbars=yes');">프로젝트 url 확인</button>
+            </td>              
+          </tr>           
+        </tbody>
+      </table>        
+  </div>      
+  </div>
+  <div class="col-md-5">
+    <img src="{% static 'img/portfolio/오팔.png' %}" class="card-img procardimg" >
+  </div>  
+</div>
+</div>
+</div>
+
+
+
+
+
+<!--20200701 edu부분 시작-->
+
+<div class="skill" id="skill" style="background-color: #e6dace; padding-bottom: 70px;">
+<div class="skiltop"></div>
+<div class="text-center"><h1 class="font-weight-bold skillfont" style="color:black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+experience & education  </h1></div>
+<br><br>
+  <!--20200630 experience card부분 시작-->
+<div class="skillcard shadow">
+    <div class="card text-center d-flex justify-content-center">
+      <div class="card-header " style="background-color: rgb(244,236,230);">      
+     experience 
+      </div>
+        <table class="table table-borderless" >  
+      <!--table table-borderless -->
+        <tbody>
+        <br>
+          <tr>
+            <th scope="row" class="pt-0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+            </th>
+            <td class="align-middle pt-0">경력 회사명</td>
+            <td class="align-middle pt-0" colspan="5">멀티캠퍼스</td>              
+          </tr>
+          <tr>
+            <th scope="row" class="pt-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+            </th>
+            <td class="align-middle pt-0">경력기간</td>
+            <td class="align-middle pt-0" colspan="5">2019.11.29-2020.07.06</td>              
+          </tr>
+          <tr>
+            <th scope="row" class="pt-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+            </th>        
+            <td class="align-middle pt-0">경력 내용</td>
+            <td class="align-middle pt-0" colspan="5">데이터분석 & 백앤드 강사 </td>  
+          </tr>            
+        </tbody>
+      </table>   
+        </div>
+    </div>
+  </div>  
+<!--20200630 experience card 부분 끝-->
+
+<br><br>
+   <!--20200630 educard부분 시작-->
+<div class="skillcard shadow">
+    <div class="card text-center d-flex justify-content-center">
+      <div class="card-header " style="background-color: rgb(244,236,230);">      
+      education
+      </div>
+        <table class="table table-borderless" >  
+      <!--table table-borderless -->
+        <tbody>
+        <br>
+          <tr>
+            <th scope="row" class="pt-0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+            </th>
+            <td class="align-middle pt-0">교육과정명</td>
+            <td class="align-middle pt-0" colspan="5">openAPI를 활용한 데이터 시각화 전처리</td>              
+          </tr>
+          <tr>
+            <th scope="row" class="pt-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+            </th>
+            <td class="align-middle pt-0">교육기간</td>
+            <td class="align-middle pt-0" colspan="5">2019.11.29-2020.07.06</td>              
+          </tr>
+          <tr>
+            <th scope="row" class="pt-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+            </th>        
+            <td class="align-middle pt-0">교육 내용</td>
+            <td class="align-middle pt-0" colspan="5">데이터분석 & 백앤드</td>  
+          </tr>            
+        </tbody>
+      </table>   
+        </div>
+    </div>
+  </div>  
+<!--20200630 educard 부분 끝-->
+</div>
+</div>
+
+<div class="footer">
+<div class="row" style="padding-top: 20px;  padding-bottom: 20px; font-size:0.9rem; color:black">
+<div class="col-5 text-center">
+<br>
+<p>Copyright © 2020 - Portfolio.io<br>
+저희의 github에 star 눌러주시면 언제든 사용가능합니다.<p>
+<button type="button" class="btn btn-dark" onclick="location.href='https://github.com/heejung-choi'">heejung</button>
+
+</div>
+<div class="col-2">  
+</div>
+<div class="col-2 text-center" style=>
+<br>
+<span class="font-weight-bold">github</span>
+<br><br>
+<img src="{% static 'img/portfolio/git.png' %}" onclick="location.href='https://github.com/heejung-choi'" width="40px" height="40px">
+</div>
+<div class="col-2 text-center">
+<br>
+<span class="font-weight-bold">email</span>
+<br><br>
+choi951008@naver.com
+</div>
+<div class="col-1"></div>
+
+</div>
+</div>           
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+</body>
+</html>
